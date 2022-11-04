@@ -1,0 +1,48 @@
+@import 'src/shared/variables.scss';
+
+
+@media screen and (max-width: 768px) {
+    .router-view {
+      margin-left: 0px;  
+    }
+}
+
+.make-call {
+  box-shadow: lightness($color: #000000);
+  z-index: 3000;
+  display: flex;
+  position: fixed;
+  min-width: 80px;
+  min-height: 80px;
+  align-items: center;
+  justify-content: center;
+  right: 30px;
+  bottom: 30px;
+}
+
+.phone {
+  cursor: pointer;
+  height: 100%;
+  width: 100%;
+  background-color: #13ff02;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow:
+      0 0 0 10px hsla(118, 100%, 52%, 0.192);
+}
+
+.phone:hover {
+  box-shadow:
+      0 0 0 10px hsla(209, 100%, 66%, 0.219);
+}
+
+@media (min-width:576px) {
+  .make-call{
+    display: none !important;
+  }
+  .phone {
+    display: none !important; 
+  }
+}
